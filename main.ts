@@ -22,6 +22,12 @@ import { buildDossier } from './vendor/makefun-frontend.ts';
 const here = fileURLToPath(new URL('.', import.meta.url));
 const out = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
+// Fail loudly instead of handing in a guide with no trophy data: the 55 guides
+// live in app/data/trophies.json, and a build without it is not a valid entry.
+if (!existsSync(join(here, 'app', 'data', 'trophies.json'))) {
+  throw new Error('app/data/trophies.json is missing — the guide has no trophies to hand in');
+}
+
 mkdirSync(out, { recursive: true });
 cpSync(join(here, 'app'), join(out, 'app'), { recursive: true });
 mkdirSync(join(out, 'screenshots'), { recursive: true });

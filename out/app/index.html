@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA 6 Trophy Guide &amp; Tracker — All 55 PS5 Trophies</title>
+<meta name="description" content="Offline guide and tracker for the 55 PlayStation 5 trophies of Grand Theft Auto VI: every trophy with its official name, description and grade, a guide in our own words with cited sources, a roadmap to the platinum, and a saved checklist.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; Offline guide</p>
+  <h1>Leonida Trophy Guide &amp; Tracker</h1>
+  <p class="lede">All 55 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze — with a guide to each one, a roadmap to the platinum, and a checklist that saves in your browser. No online trophies. Difficulty 4/10, about 200 hours, one playthrough. Sources: PowerPyx, GTABase, Push Square, Beebom and KeenGamer, cited beside every guide.</p>
+  <div class="progress-wrap" aria-label="Trophy progress">
+    <div class="progress-numbers"><span id="progressText">0 / 55 earned</span><span id="progressPct">0%</span></div>
+    <div class="progress-bar"><div id="progressFill" class="progress-fill"></div></div>
+    <p class="progress-note" id="progressNote">Tick a trophy when you earn it in-game. Your progress is saved in this browser only.</p>
+  </div>
+</header>
+
+<main>
+  <section class="roadmap" id="roadmap" aria-labelledby="roadmapHeading">
+    <h2 id="roadmapHeading">Roadmap to the platinum</h2>
+    <p class="roadmap-intro">Three stages, about 200 hours in total. Keep a manual save at the start of every chapter — there is no mission replay and no New Game Plus — and never use cheats on a trophy run: they disable trophies and saving.</p>
+    <ol class="stages">
+      <li class="stage">
+        <h3>Stage 1 — Story, 5 chapters <span class="stage-hours">60–80 hours</span></h3>
+        <p>Play the five chapters and take optional missions as they appear. Scan new vehicles with WAiNK and study animals through the binoculars as you go, so the 100% checklist is shorter later.</p>
+        <p class="stage-warn">&#9888; The one trophy that may be missable lives here: <strong>Positive Mental Attitude</strong>. In Chapter 1, after the mission Down to Earth, talk to Lucia in the kitchen at Jason&rsquo;s house in the morning, follow her to the balcony and accept her invitation to meditate. It is gone after Chapter 1.</p>
+      </li>
+      <li class="stage">
+        <h3>Stage 2 — 100% completion checklist <span class="stage-hours">~100 hours</span></h3>
+        <p>After the credits the checklist opens under Progress, then Stats, then 100% Completion. Everything you did during the story already counts, and nothing on it is missable. It is lenient — closer to 60% true completion: 70 of 80 challenges, 300 of 397 stunts, 15 of 18 card sets, 200 of 277 vehicles, 100 of 255 animals, 50 of 66 weapons. Only robberies, underwater discoveries, all 42 shooting-range golds, all 42 drone time trials and all 15 of Bret&rsquo;s Target Decks need everything.</p>
+      </li>
+      <li class="stage">
+        <h3>Stage 3 — Cleanup <span class="stage-hours">~10 hours</span></h3>
+        <p>Finish the 8 Strangers &amp; Freaks strands and the character questlines (Andy, Kenton, Billy, Randy, Tyrone), then mop up the remaining activity, robbery and money trophies in free roam. The platinum pops when the last of the other 54 is earned.</p>
+      </li>
+    </ol>
+    <p class="missable-banner" id="missableBanner">&#9888; Missable: <strong>Positive Mental Attitude</strong> (bronze) — meditate at every spot across Leonida. The first meditation, Lucia on the balcony at Jason&rsquo;s house in Chapter 1, disappears after that chapter. Do it, even though it is unconfirmed whether the trophy needs it — it is the safe choice.</p>
+  </section>
+
+  <section class="controls" aria-label="Tracker controls">
+    <div class="control-row">
+      <label class="search-label">Search <input id="searchBox" type="search" placeholder="Trophy name, mission or keyword…" autocomplete="off"></label>
+      <label>Kind
+        <select id="kindFilter">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="missable">Missable</option>
+          <option value="collectibles">Collectibles</option>
+          <option value="activities">Activities</option>
+          <option value="online">Online</option>
+        </select>
+      </label>
+      <label>Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Stage
+        <select id="stageFilter">
+          <option value="all">All stages</option>
+          <option value="1">Stage 1 — Story</option>
+          <option value="2">Stage 2 — 100%</option>
+          <option value="3">Stage 3 — Cleanup</option>
+        </select>
+      </label>
+      <label>Show
+        <select id="earnedFilter">
+          <option value="all">All trophies</option>
+          <option value="todo">Not earned yet</option>
+          <option value="earned">Earned</option>
+        </select>
+      </label>
+    </div>
+    <div class="control-row">
+      <label class="toggle"><input id="spoilerToggle" type="checkbox" checked> <span>Hide story spoilers — story trophy names and descriptions stay hidden until earned</span></label>
+    </div>
+    <div class="control-row">
+      <button id="exportBtn" type="button">Export progress</button>
+      <button id="importBtn" type="button">Import progress</button>
+      <input id="importFile" type="file" accept="application/json,.json" hidden>
+      <button id="resetBtn" type="button" class="danger">Reset progress</button>
+      <span id="statusLine" class="status" role="status"></span>
+    </div>
+    <p class="online-note" id="onlineNote">Online filter: this game has <strong>0 online trophies</strong> — every trophy is earned offline in single-player, so the online filter is empty by design.</p>
+  </section>
+
+  <section aria-labelledby="listHeading">
+    <h2 id="listHeading">The 55 trophies <span id="countText" class="count-text"></span></h2>
+    <p class="list-note">Names and descriptions are the official PlayStation text. Guides are written for this page, in our own words, with the source of each fact named beside them. Five trophies had no confirmed unlock method at launch — their guides say so honestly instead of inventing one.</p>
+    <div id="trophyList" class="trophy-list"></div>
+    <p id="emptyNote" class="empty-note" hidden>No trophies match these filters. Try clearing the search or choosing another kind.</p>
+  </section>
+
+  <section class="about" aria-labelledby="aboutHeading">
+    <h2 id="aboutHeading">About this guide</h2>
+    <p>Built as an offline web app: open <code>index.html</code> from any static server and it works with the network off. Progress is stored in your browser&rsquo;s local storage and never leaves your machine; export writes a file you can keep or move to another browser, import reads it back. The look is our own — no Rockstar logo, no official artwork, no game screenshots. Trophy names and descriptions are shown as PlayStation publishes them; everything else is written for this guide.</p>
+    <p>Sources used throughout: <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</a>, <a href="https://www.powerpyx.com/gta-6-100-completion-checklist-guide/">PowerPyx — 100% Completion Checklist</a>, <a href="https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series">GTABase — Trophies &amp; Achievements List</a>, <a href="https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap">Push Square — Trophy Guide &amp; Roadmap</a>, <a href="https://beebom.com/gta-6-meditation-spots-locations/">Beebom — Meditation Spots</a>, <a href="https://www.keengamer.com/articles/guides/gta-6-trophy-guide-platinum-roadmap-all-55-trophies/">KeenGamer — Trophy Guide &amp; Platinum Roadmap</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Unofficial fan guide. Grand Theft Auto and GTA are trademarks of their owners; this guide is not affiliated with or endorsed by Rockstar Games. Made for the make.fun bounty <a href="https://make.fun/bounty/gta6-trophy-guide-01">gta6-trophy-guide-01</a>.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
