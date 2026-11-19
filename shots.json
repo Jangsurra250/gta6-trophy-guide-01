@@ -1,5 +1,1 @@
-[
-  { "file": "1-checklist.jpg", "path": "/", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "2-silver.jpg", "path": "/", "grade": "silver", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "3-bronze.jpg", "path": "/", "grade": "bronze", "scroll": 1400, "viewport": { "width": 1280, "height": 800 } }
-]
+[{"file":"1-checklist.jpg","note":"Checklist with the platinum and first story trophies, guides and cited sources open; one trophy ticked, spoiler setting off","path":"/","viewport":{"height":800,"width":1280}},{"file":"2-roadmap.jpg","note":"Roadmap to the platinum: the three stages with hours, and the missable-trophy banner","path":"/","viewport":{"height":800,"width":1280}},{"file":"3-filters.jpg","note":"Filters at work: kind set to Collectibles, spoiler setting on, export/import/reset buttons, and the note that the game has 0 online trophies","path":"/","viewport":{"height":800,"width":1280}},{"file":"4-missable.jpg","note":"Search for Positive Mental Attitude: the missable trophy card with its full guide, MISSABLE flag and three cited sources","path":"/","viewport":{"height":800,"width":1280}}]

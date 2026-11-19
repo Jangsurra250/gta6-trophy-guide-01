@@ -9,7 +9,7 @@ An offline web app that guides you to the platinum in Grand Theft Auto VI on Pla
 ## What it covers
 
 - **All 55 trophies** — 1 platinum, 2 gold, 6 silver, 46 bronze (28 hidden until earned), each with its official name, description and grade as PlayStation publishes them, plus a guide written for this page, in our own words, with the source of each fact named beside it.
-- **A tracker** — tick trophies off as you earn them; progress saves in the browser (localStorage), exports to a file, and imports back. Filters by kind (story, missable, collectibles, activities, online), grade, roadmap stage and earned state, plus text search.
+- **A tracker** — tick trophies off as you earn them; progress saves in the browser (localStorage), exports to a file, and imports back. Filters by kind (story, missable, collectibles, activities, online), grade, roadmap stage and earned state, plus text search. The online filter is empty by design: the game has 0 online trophies, and the app says so next to the filters instead of leaving you guessing.
 - **A spoiler setting** — hides the names and descriptions of story trophies until you earn them.
 - **A roadmap to the platinum** — three stages, about 200 hours at 4/10 difficulty: story (60–80 h), the 100% completion checklist (~100 h), cleanup (~10 h).
 - **The one missable trophy, flagged** — Positive Mental Attitude: meditate at every spot across Leonida, starting with Lucia on the balcony at Jason's house in Chapter 1, after the mission Down to Earth. It disappears after Chapter 1, so do it.
